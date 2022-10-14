@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="donate.css">
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"> <img src="images/logo.jpg" alt="" width="90px" class="logo"> </label>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="home.html">Bloodtype</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a class="active" href="admin.html">Admin</a></li>
+          <li><a href="CRUD.php" >Dashboard</a></li>
+    
+    
+    
+        </ul>
+      </nav>
+
+    
+    <br/><br/>
+
+    <section class="booking">
+
+    <form action="create.php" method="post" class="book-form" name="form1">
+        <!-- <table width="25%" border="0"> -->
+            <div class="flex">
+                <div class="inputBox">
+                  <span>Name :</span>
+                  <input type="text" placeholder="Enter your name" id="name" name="name">
+                </div>
+                <div class="inputBox">
+                  <span>Email :</span>
+                  <input type="email" placeholder="Enter your email" id="email" name="email">
+                </div>
+                <div class="inputBox">
+                  <span>Phone :</span>
+                  <input type="telephone" placeholder="Enter your number" id="phone" name="phone">
+                </div>
+                <div class="inputBox">
+                  <span>Age :</span>
+                  <input type="text" placeholder="Enter your age" id="age" name="age">
+                </div>
+                <div class="inputBox">
+                  <span>Address :</span>
+                  <input type="text" placeholder="Enter your address" id="address" name="address">
+                </div>
+                <div class="inputBox" id="gender">
+                  <span>Gender :</span>
+                  <label>Female</label>
+                  <input type="radio" name="gender" value="female">
+                  <label>Male</label>
+                  <input type="radio" name="gender" value="male">
+      
+                </div>
+                <div class="inputBox">
+                  <span>Please select blood type</span>
+                  <select name="blood_type" id="blood_type">
+                    <option></option>
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+      
+                  </select><br /><br />
+                </div>
+                <!-- <button id="register" class="btn" name="submit"> Register</button> -->
+                <td><input type="submit" name="Submit" class= "btn" value="Add"></td>
+        
+    </form>
+</section>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+      <div class="box">
+        <h3>Quick links</h3>
+        <a href="home.html"> <i class="fas fa-angle-right"></i> Home</a>
+        <a href="home.html"> <i class="fas fa-angle-right"></i> Bloodtype </a>
+        <a href="about.html"> <i class="fas fa-angle-right"></i> About</a>
+        <a href="donate.html"> <i class="fas fa-angle-right"></i> Donate</a>
+        <a href="pass.html"> <i class="fas fa-angle-right"></i> Admin</a>
+        <a href="CRUD.php"> <i class="fas fa-angle-right"></i> Dashboard</a>
+      </div>
+
+
+      <div class="box">
+        <h3>Contact info</h3>
+        <a href="#"> <i class="fas fa-phone"></i> 09119999999 </a>
+        <a href="#"> <i class="fas fa-phone"></i> 0113782378 </a>
+        <a href="#"> <i class="fas fa-envelope"></i> hilcoe.hs@gmail.com </a>
+
+      </div>
+
+      <div class="box">
+        <h3>Follow us</h3>
+        <a href="#"> <i class="fab fa-facebook-f"></i> Facebook </a>
+        <a href="#"> <i class="fab fa-twitter"></i> Twitter </a>
+        <a href="#"> <i class="fab fa-instagram"></i> Instagram </a>
+        <a href="#"> <i class="fab fa-linkedin"></i> Linkedin </a>
+      </div>
+
+    </div>
+
+    <div class="credit"> Website belongs to<span> HiLCoE blood donations</span> | all rights reserved! </div>
+
+  </section>
+
+</body>
+</html>

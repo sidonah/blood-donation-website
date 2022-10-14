@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <script>
+        const btn = document.getElementById("enter");
+
+function enter() {
+  var password = document.forms["pass"]["password"].value;
+  var pass1 = 1234;
+
+  if(password == pass1){
+      window.location="http://localhost/test/admin.html";
+      return true;
+  }
+
+  if (password == null || password == ""){
+    alert("Please enter password");
+    return false;
+  }
+  if(password !== pass1){
+     alert("Wrong password");
+     return false;
+  }
+
+}
+
+btn.addEventListener("click", (e) => {
+  enter();
+});
+    </script>
+
+    <link rel="stylesheet" href="donate.css">
+</head>
+
+<body>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"> <img src="images/logo.jpg" alt="" width="90px" class="logo"> </label>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="home.html">Bloodtype</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <!-- <li><a href="admin.html">Admin</a></li> -->
+          <li><a class="active" href="pass.html">Admin</a></li>
+          <!-- <li><a href="CRUD.php" >Dashboard</a></li> -->
+    
+    
+    
+        </ul>
+      </nav>
+
+      <section class="booking">
+
+        <form  action= "admin.html" method="post" class="book-form" name="pass">
+            <!-- <table width="25%" border="0"> -->
+                <div class="flex">
+                    <div class="inputBox">
+                      <span>Password :</span>
+                      <input type="text" placeholder="Enter your password" id="password" name="password">
+                    </div>
+                    </div>
+
+                    <button id="enter" class="btn" name="enter"> Enter</button>
+
+        </form>
+        
+      </section>  
+
+      <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+  
+          <div class="box">
+            <h3>Quick links</h3>
+            <a href="home.html"> <i class="fas fa-angle-right"></i> Home</a>
+            <a href="home.html"> <i class="fas fa-angle-right"></i> About</a>
+            <a href="about.html"> <i class="fas fa-angle-right"></i> Package</a>
+            <a href="donate.html"> <i class="fas fa-angle-right"></i> Donate</a>
+            <a href="pass.html"> <i class="fas fa-angle-right"></i> Admin</a>
+          </div>
+  
+  
+          <div class="box">
+            <h3>Contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> 09119999999 </a>
+            <a href="#"> <i class="fas fa-phone"></i> 0113782378 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> hilcoe.hs@gmail.com </a>
+  
+          </div>
+  
+          <div class="box">
+            <h3>Follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> Facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> Twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> Instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> Linkedin </a>
+          </div>
+  
+        </div>
+  
+        <div class="credit"> Website belongs to<span> HiLCoE blood donations</span> | all rights reserved! </div>
+  
+      </section>
+    
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate</title>
+
+  <!-- swiper css link  -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> -->
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="donate.css">
+  <script defer src="about.js"> </script>
+
+</head>
+
+<body>
+
+  <!-- header section starts  -->
+
+  
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo"> <img src="images/logo.jpg" alt="" width="90px" class="logo"> </label>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="home.html">Bloodtype</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="active" href="donate.html">Donate</a></li>
+      <li><a href="pass.html">Admin</a></li>
+
+
+
+    </ul>
+  </nav>
+
+
+  <!-- header section ends -->
+
+  <div class="heading">
+    <img src="images/blood-donation.jpg" alt="">
+    <!-- <h1>Donate now</h1> -->
+  </div>
+
+  <!-- booking section starts  -->
+
+  <article class="why_donate">
+
+    <div class="why_intro">
+      <h1>Why donate blood?</h1>
+    </div>
+
+    <div class="hero_1">
+      <img src="images/hero_1.jpg" alt="">
+    </div>
+
+    <div class="hero_2">
+      <img src="images/hero_2.jpg" alt="">
+    </div>
+
+    <div class="why_body">
+      <p>
+        Blood is essential to help patients survive surgeries, cancer treatment, chronic illnesses, and traumatic
+        injuries. This lifesaving
+        care starts with one person making a generous donation.The need for blood is constant. But only about 3% of
+        age-eligible people
+        donate blood yearly.
+      </p>
+    </div>
+
+</article>
+
+
+<article class="donate_form">
+
+  <h1 class="heading-title">Please fill out the form below to donate blood!</h1> 
+
+    <section class="booking">
+
+      <form  method="POST" action="blood.php" class="book-form" name="donate">
+
+        <div class="flex">
+
+          <div class="inputBox">
+            <span>Name :</span>
+            <input type="text" placeholder="Enter your name" id="name" name="name">
+          </div>
+
+          <div class="inputBox">
+            <span>Email :</span>
+            <input type="email" placeholder="Enter your email" id="email" name="email">
+          </div>
+
+          <div class="inputBox">
+            <span>Phone :</span>
+            <input type="telephone" placeholder="Enter your number" id="phone" name="phone">
+          </div>
+
+          <div class="inputBox">
+            <span>Age :</span>
+            <input type="text" placeholder="Enter your age" id="age" name="age">
+          </div>
+
+          <div class="inputBox">
+            <span>Address :</span>
+            <input type="text" placeholder="Enter your address" id="address" name="address">
+          </div>
+
+          <div class="inputBox" id="gender">
+            <span>Gender :</span>
+            <label>Female</label>
+            <input type="radio" name="gender" value="Female">
+            <label>Male</label>
+            <input type="radio" name="gender" value="Male">
+          </div>
+
+          <div class="inputBox">
+            <span>Please select blood type</span>
+            <select name="blood_type" id="blood_type">
+              <option></option>
+              <option>A+</option>
+              <option>A-</option>
+              <option>B+</option>
+              <option>B-</option>
+              <option>O+</option>
+              <option>O-</option>
+              <option>AB+</option>
+              <option>AB-</option>
+            </select><br /><br />
+          </div>
+
+        
+
+        <button id="register" class="btn" name="submit"> Register</button>
+      </div>
+      </form>
+
+    </section>
+
+    <!-- booking section ends -->
+
+
+
+
+
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+      <div class="box-container">
+
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="home.html"> <i class="fas fa-angle-right"></i> Home</a>
+          <a href="home.html"> <i class="fas fa-angle-right"></i> Bloodtype</a>
+          <a href="about.html"> <i class="fas fa-angle-right"></i> About</a>
+          <a href="donate.html"> <i class="fas fa-angle-right"></i> Donate</a>
+          <a href="pass.html"> <i class="fas fa-angle-right"></i> Admin</a>
+        </div>
+
+
+        <div class="box">
+          <h3>Contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> 09119999999 </a>
+          <a href="#"> <i class="fas fa-phone"></i> 0113782378 </a>
+          <a href="#"> <i class="fas fa-envelope"></i> hilcoe.hs@gmail.com </a>
+
+        </div>
+
+        <div class="box">
+          <h3>Follow us</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> Facebook </a>
+          <a href="#"> <i class="fab fa-twitter"></i> Twitter </a>
+          <a href="#"> <i class="fab fa-instagram"></i> Instagram </a>
+          <a href="#"> <i class="fab fa-linkedin"></i> Linkedin </a>
+        </div>
+
+      </div>
+
+      <div class="credit"> Website belongs to<span> HiLCoE blood donations</span> | all rights reserved! </div>
+
+    </section>
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="donate.js"></script>
+
+
+
+</body>
+
+</html>

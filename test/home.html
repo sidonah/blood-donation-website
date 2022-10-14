@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script type="text/javascript" src="jquery/jq.js"></script>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body >
+    <!-- <section id="banner"></section> -->
+    <nav>
+
+      <input type="checkbox" id="check" />
+
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <label class="logo">
+        <img src="images/logo.jpg" alt="" width="90px" class="logo" />
+      </label>
+
+      <ul>
+        <li><a class="active" href="home.html">Home</a></li>
+        <li><a href="#" id="bloot" class="active">Bloodtype</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="donate.html">donate</a></li>
+        <li><a href="pass.html">Admin</a></li>
+      </ul>
+
+    </nav>
+
+    <script>
+      $("a.active").css("background","black");
+</script>
+
+<div class="all">
+    <div class="banner">
+      
+      <div class="content">
+        <h1>I am a <span class="typee"></span></h1>
+        <p>Donate blood, give life</p>
+        <a href="donate.html">DONATE</a>
+      </div>
+    </div>
+    <!-- java script code 1 -->
+    <script src="typed.js"></script>
+    <script>
+      var typed= new Typed(".typee",{
+        strings: [
+         "Donor",
+        "Giver",
+        "Helper"
+        ], 
+        typeSpeed:120,
+        backSpeed:90,
+        loop:true
+
+      });
+    </script>
+    <h1 class="intro">Your blood donation can help save lives</h1>
+
+
+    <div class="homemain">
+      <br /><br />
+
+      <section class="drop">
+
+        <div class="txtdrop">
+          <h3>WHY WE NEED DONORS</h3>
+          <br />
+          <ol>
+            <li>
+              There is no substitute for blood. The community supply depends on
+              people like you.
+            </li>
+            <li>
+              The blood supply needs to be replenished constantly. Blood
+              products have a short shelf life, from 5 to 42 days.
+            </li>
+            <li>
+              Right now, not enough people donate blood. Only 4 people out of
+              100 who are able to donate blood do so.
+            </li>
+            <li>
+              Blood is in constant demand for accident victims, surgery and
+              cancer patients and more.
+            </li>
+          </ol>
+        </div>
+
+        <div class="imdrop">
+          <img src="images/bloodtubes.png" />
+        </div>
+
+      </section>
+
+      <section class="drop">
+        <div class="imdrop">
+          <img src="images/donor2.jpg" />
+        </div>
+        <div class="txtdrop">
+          <h3>WHAT TO DO BEFORE DONATING</h3>
+          <br />
+          <ol>
+            <li>
+              To donate blood, you must be in good health, 16 years of age
+              (16-year-olds need a completed and signed Parental Consent Form)
+              or older, and weigh a minimum of 110 lbs.
+            </li>
+            <li>
+              Whole blood donation process takes about 10-15 minutes. Automated
+              procedures can take anywhere from 45 minutes to 90 minutes.
+            </li>
+            <li>
+              Eat a light healthy meal. Avoid fatty foods. Donating blood on an
+              empty stomach is not recommended. Eat iron rich foods a few days
+              leading up to your blood donation.
+            </li>
+            <li>
+              Get a good night sleep before the night before your donation and
+              drink plenty of water prior to donating.
+            </li>
+            <li>
+              On your blood donation day, wear comfortable clothing, preferably
+              with a short-sleeve shirt. Bring your ID and a list of any
+              medications you are taking. If you are 16, you'll need a signed
+              parental consent form.
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="drop">
+
+        <div class="txtdrop">
+          <h3>WHAT TO DO AFTER DONATING</h3>
+          <br />
+          <ol>
+            <li>
+              Don't do any heavy lifting or vigorous exercise for the rest of
+              the day.
+            </li>
+            <li>
+              Keep the strip bandage on for the next several hours; to avoid a
+              skin rash, clean the area around the bandage with soap and water.
+            </li>
+            <li>
+              If the needle site starts to bleed, apply pressure and raise your
+              arm straight up for 5-10 minutes or until bleeding stops.
+            </li>
+            <li>
+              If you experience dizziness or lightheadedness, stop what you're
+              doing and sit down or lie down until you feel better; avoid
+              performing any activity where fainting may lead to injury for at
+              least 24 hours.
+            </li>
+            <li>Keep eating iron-rich foods.</li>
+            <li>
+              If you donate frequently, be sure to take multivitamins with iron
+              to ensure you continue to replenish your iron stores before your
+              next donation.
+            </li>
+          </ol>
+        </div>
+
+        <div class="imdrop">
+          <img src="images/bd.jpg" />
+        </div>
+
+      </section>
+    </div>
+  </div>
+
+    <!-- jquery code 2 -->
+    <script>
+      $(document).ready(function(){
+        $("#bloot").click(function(){
+          $(".all").slideUp(1000);
+        })
+      })
+    </script>
+
+    <div class="service-box" id="bloodT">
+
+      <h1>Which blood type can donate to which?</h1>
+      <h2>
+        Hover on the pictures below to see which blood type can donate to which
+      </h2>
+
+      <div class="single-service">
+
+        <div class="onlaydiv">
+          <img src="images/blood.jpg" />
+          <h1 class="onlay">A+</h1>
+        </div>
+
+        <div class="overlay"></div>
+        <div class="service-desc">
+          <h3>A+ blood type</h3>
+          <hr />
+          <p>can give blood to A+ and AB+</p>
+        </div>
+
+      </div>
+
+
+      <div class="single-service">
+
+        <div class="onlaydiv">
+          <img src="images/blood.jpg" />
+          <h1 class="onlay">A-</h1>
+        </div>
+
+        <div class="overlay"></div>
+        <div class="service-desc">
+          <h3>A- blood type</h3>
+          <hr />
+          <p>can give blood to A-, A+, AB- and AB+</p>
+        </div>
+
+      </div>
+
+
+      <div class="single-service">
+
+        <div class="onlaydiv">
+          <img src="images/blood.jpg" />
+          <h1 class="onlay">B+</h1>
+        </div>
+
+        <div class="overlay"></div>
+        <div class="service-desc">
+          <h3>B+ blood type</h3>
+          <hr />
+          <p>can give blood to B+ and AB+</p>
+        </div>
+
+      </div>
+
+
+      <div class="single-service">
+
+        <div class="onlaydiv">
+          <img src="images/blood.jpg" />
+          <h1 class="onlay">B-</h1>
+        </div>
+
+        <div class="overlay"></div>
+        <div class="service-desc">
+          <h3>B- blood type</h3>
+          <hr />
+          <p>can give blood to B-, B+, AB- and AB+</p>
+        </div>
+
+      </div>
+
+
+      <div class="single-service">
+
+        <div class="onlaydiv">
+          <img src="images/blood.jpg" />
+          <h1 class="onlay">O+</h1>
+        </div>
+
+        <div class="overlay"></div>
+        <div class="service-desc">
+          <h3>O+ blood type</h3>
+          <hr />
+          <p>can give blood to O+, A+, B+ and AB+</p>
+        </div>
+
+      </div>
+
+
+      <div class="single-service">
+
+        <div class="onlaydiv">
+          <img src="images/blood.jpg" />
+          <h1 class="onlay">O-</h1>
+        </div>
+
+        <div class="overlay"></div>
+        <div class="service-desc">
+          <h3>O- blood type</h3>
+          <hr />
+          <p>can give blood to all blood types</p>
+        </div>
+
+      </div>
+
+
+      <div class="single-service">
+
+        <div class="onlaydiv">
+          <img src="images/blood.jpg" />
+          <h1 class="onlay">AB+</h1>
+        </div>
+
+        <div class="overlay"></div>
+        <div class="service-desc">
+          <h3>AB+ blood type</h3>
+          <hr />
+          <p>can give blood to AB+ only</p>
+        </div>
+
+      </div>
+
+
+      <div class="single-service">
+
+        <div class="onlaydiv">
+          <img src="images/blood.jpg" />
+          <h1 class="onlay">AB-</h1>
+        </div>
+
+        <div class="overlay"></div>
+        <div class="service-desc">
+          <h3>AB- blood type</h3>
+          <hr />
+          <p>can give blood to AB- and AB+</p>
+        </div>
+      </div>
+
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+    <section class="footer">
+
+      <div class="box-container">
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="home.html"> <i class="fas fa-angle-right"></i> Home</a>
+          <a href="home.html"> <i class="fas fa-angle-right"></i> Bloodtype</a>
+          <a href="about.html"> <i class="fas fa-angle-right"></i> About</a>
+          <a href="donate.html"> <i class="fas fa-angle-right"></i> Donate</a>
+          <a href="pass.html"> <i class="fas fa-angle-right"></i> Admin</a>
+        </div>
+
+        <div class="box">
+          <h3>Contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> 09119999999 </a>
+          <a href="#"> <i class="fas fa-phone"></i> 0113782378 </a>
+          <a href="#"> <i class="fas fa-envelope"></i> hilcoe.hs@gmail.com </a>
+        </div>
+
+        <div class="box">
+          <h3>Follow us</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> Facebook </a>
+          <a href="#"> <i class="fab fa-twitter"></i> Twitter </a>
+          <a href="#"> <i class="fab fa-instagram"></i> Instagram </a>
+          <a href="#"> <i class="fab fa-linkedin"></i> Linkedin </a>
+        </div>
+      </div>
+
+      <div class="credit">
+        Website belongs to<span> HiLCoE blood donations</span> | all rights
+        reserved!
+      </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- swiper js link  -->
+    <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
+
+    <!-- custom js file link  -->
+    <script src="about.js"></script>
+  </body>
+</html>
